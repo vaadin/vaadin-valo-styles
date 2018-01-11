@@ -1,53 +1,16 @@
-![Bower version](https://img.shields.io/bower/v/vaadin-valo-theme.svg)
-[![Build Status](https://travis-ci.org/vaadin/vaadin-valo-theme.svg?branch=master)](https://travis-ci.org/vaadin/vaadin-valo-theme)
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/vaadin/vaadin-core-elements?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-# Valo Theme for Vaadin Elements
+# Vaadin Valo Styles
 
-`vaadin-valo-theme` is customizable theme for the [Vaadin Core Elements](https://vaadin.com/elements).
+## ⚠️ This repository is deprecated
 
-## Demos and documentation
+This repository, and the previous `vaadin-valo-theme` Bower package, will be removed after March 2018.
 
-Links to demos and documentation can be found from the [release notes](https://github.com/vaadin/vaadin-valo-theme/releases).
+“Valo” has been renamed to “Lumo”. Please migrate to the [`vaadin-lumo-styles`](http://github.com/vaadin/vaadin-lumo-styles) package instead, which is just a rename of this repo – the content is the same.
 
-
-## Running demos and tests in browser
-
-1. Fork the `vaadin-valo-theme` repository and clone it locally.
-
-1. Make sure you have [npm](https://www.npmjs.com/) installed.
-
-1. When in the `vaadin-valo-theme` directory, run `npm install` and then `bower install` to install dependencies.
-
-1. Run `polymer serve --open`, browser will automatically open the component API documentation.
-
-1. You can also open demo or in-browser tests by adding **demo** or **test** to the URL, for example:
-
-  - http://127.0.0.1:8080/components/vaadin-valo-theme/demo
-  - http://127.0.0.1:8080/components/vaadin-valo-theme/test
+**You can ignore this deprecation warning** if you do not have an explicit dependency to this package in your `bower.json` – the deprecation message will go away once you update all [Vaadin elements](https://vaadin.com/elements) to versions that have migrated to using `vaadin-lumo-styles`.
 
 
-## Running tests from the command line
+## Why a new repository, why not rename this repository?
 
-1. When in the `vaadin-valo-theme` directory, run `polymer test`
-
-
-## Following the coding style
-
-We are using [ESLint](http://eslint.org/) for linting JavaScript code. You can check if your code is following our standards by running `gulp lint`, which will automatically lint all `.js` files as well as JavaScript snippets inside `.html` files.
-
-
-## Creating a pull request
-
-  - Make sure your code is compliant with our code linters: `gulp lint`
-  - Check that tests are passing: `polymer test`
-  - [Submit a pull request](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github) with detailed title and description
-  - Wait for response from one of Vaadin Elements team members
-
-## Updating the version number
-Use `npm version <new version>` to release a new version. This will update
-the version number in `package.json` and in other relevant places such as `version.html`
-
-## License
-
-Apache License 2.0
+By having another repo, it should be a little less disrupting to anyone using this package at the moment, since the new package version number will start from `1.0` and not from `2.0` as in this package.
